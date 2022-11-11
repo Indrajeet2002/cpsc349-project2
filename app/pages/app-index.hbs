@@ -5,10 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline text-blue-700">
-    Welcome to Blog Engine!
-  </h1>
-  {{!-- add two href for two images --}}
+  <div object>
+  <h2 style="color: rgb(0, 119, 255)">Blogs</h2>
+  <ul class="blogs" key="blogs" array sortable>
+    {{#for blog in blogs}}
+      <li
+        class="blog" 
+        object
+        key:text="@innerText" 
+        edit:text
+        >{{ default blog.text "New blog" }}</li>
+    {{/for}}
+  </ul>
+  <button class="add-blog" new:blog>Add Blogs</button>
+</div>
 </body>
 <footer>
   <a href="about">About Us</a>
