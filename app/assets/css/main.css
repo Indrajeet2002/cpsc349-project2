@@ -938,12 +938,6 @@ video {
   outline-offset: 2px;
 }
 
-.transition-colors {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -952,12 +946,18 @@ video {
   transition-duration: 150ms;
 }
 
-.duration-200 {
-  transition-duration: 200ms;
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .duration-300 {
   transition-duration: 300ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
 }
 
 .ease-in-out {
@@ -981,8 +981,9 @@ body {
 
 h2 {
   margin-bottom: 1rem;
-  color: #7048e8;
+  color:rgb(0, 119, 255);
   font-size: 24px;
+  text-align: center;
 }
 
 .text-light {
