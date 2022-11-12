@@ -1,11 +1,23 @@
-<form action="/user/forgot" method="post" style="text-align: center; ">
-  <h1> Forgot Password</h1>
-  <input type="text" name="username" placeholder="Your username" required>
-  <button type="submit">Send reset password link</button>
+<form action="/user/forgot" method="post" >
+  <section class="text-gray-600 body-font">
+    <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+      <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+        <h1 class="title-font font-medium text-3xl text-gray-900">Forgot Password</h1>
+      </div>
+      <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+        <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Username</h2>
+        <div class="relative mb-4">
+          <label for="full-name" class="leading-7 text-sm text-gray-600">Username</label>
+          <input type="text" name="username" placeholder="Your username" required>
+        </div>
+        <button class="button button--large button--account" type="submit">Send reset link</button>
+      </div>
+    </div>
+  </section>
 </form>
-<footer class="text-gray-600 body-font">
+<footer class="text-gray-600 body-font" style="position:relative; top:auto;">
   <div class="container px-5 py-24 mx-auto flex md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
-    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10" style="position: relative; top: 500px;">
+    <div class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:mt-0 mt-10" style="position: relative; top: 200px;">
       <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
         <img src="https://www.onblastblog.com/wp-content/uploads/2017/08/blogger-logo.jpg" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-12 h-12 text-white p-2 rounded-full" viewBox="0 0 30 30">
           <path d="M5 12h14M12 5l7 7-7 7"></path>
@@ -14,7 +26,7 @@
       </a>
       <p class="mt-2 text-sm text-gray-500">The place to satisfy all your blogging needs</p>
     </div>
-    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first" style="position: relative; top: 500px; right: 270px;">
+    <div class="flex-grow flex flex-wrap md:pr-20 -mb-10 md:text-left text-center order-first" style="position: relative; top: 200px; right: auto;">
       <div class="lg:w-1/4 md:w-1/2 w-full px-4">
         <h2 class="title-font font-medium text-gray-900 tracking-widest text-sm mb-3" style="font-size: 20px;">Links</h2>
         <nav class="list-none mb-10">
@@ -34,7 +46,7 @@
       </div>
     </div>
   </div>
-  <div class="bg-gray-100" style="position: relative; top: 705px;">
+  <div class="bg-gray-100" style="position: relative; top: 110px;">
     <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
       <p class="text-gray-500 text-sm text-center sm:text-left">© 2022 Blog Engine</p>
     </div>
